@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 87vw;
+    height: 80vh;
+    position: relative;
+    left: 99px;
+    top: 70px;
+}
+
+.container .header{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1.2;
+    text-decoration: underline;
+}
+
+.ball{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 1230px;
+    position: absolute;
+    height: 121px;
+    width: 121px;
+    bottom: 0;
+    left: 0;
+    animation: move 5s alternate 1s infinite;
+}
+
+@keyframes move{
+    0%{transform: translateX(0px) translateY(0px);}
+    25%{transform: translateX(300px) translateY(-300px) rotate(90deg);}
+    50%{transform: translateX(600px) translateY(0px) rotate(180deg);}
+    75%{transform: translateX(900px) translateY(-300px) rotate(270deg);}
+    100%{transform: translateX(1200px) translateY(0px) rotate(360deg);}
+}
